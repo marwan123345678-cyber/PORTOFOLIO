@@ -1,0 +1,282 @@
+<html lang="fr" class="scroll-smooth"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marwan Digital Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&amp;display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #030303;
+            /* Image représentant Pouvoir (Architecture imposante), Argent (Quartier d'affaires) et Richesse (Esthétique premium) */
+            background-image: 
+                linear-gradient(to bottom, rgba(3, 3, 3, 0.85) 0%, rgba(3, 3, 3, 0.95) 100%),
+                url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=2070');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+        .glass-card {
+            background: rgba(20, 20, 20, 0.4);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        }
+        .glass-card:hover {
+            background: rgba(30, 30, 30, 0.6);
+            border-color: rgba(255, 255, 255, 0.15);
+            transform: translateY(-4px);
+        }
+        .text-glow {
+            text-shadow: 0 0 40px rgba(255,255,255,0.15);
+        }
+        /* Utilitaires de scrollbar pour une finition premium */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0a0a0a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #333;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #444;
+        }
+    </style>
+</head>
+<body class="text-zinc-400 antialiased selection:bg-white/20 selection:text-white min-h-screen">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 border-b border-white/5 bg-[#030303]/70 backdrop-blur-xl">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="text-zinc-100 font-medium tracking-tighter text-lg flex items-center gap-2">
+                <div class="w-6 h-6 bg-gradient-to-tr from-zinc-200 to-zinc-500 rounded-full flex items-center justify-center shadow-[0_0_15px_rgba(255,255,255,0.3)]">
+                    <div class="w-2 h-2 bg-[#030303] rounded-full"></div>
+                </div>
+                MARWAN
+            </a>
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="#projects" class="text-zinc-400 hover:text-zinc-100 transition-colors">Projets</a>
+                <a href="#services" class="text-zinc-400 hover:text-zinc-100 transition-colors">Services</a>
+                <a href="#contact" class="px-4 py-2 bg-white text-black rounded-full hover:bg-zinc-200 transition-colors font-medium text-xs tracking-wide">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="relative pt-36 pb-20">
+        
+        <!-- Hero Section -->
+        <section class="max-w-5xl mx-auto px-6 mb-32 text-center relative z-10">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/10 bg-white/5 text-xs font-medium text-zinc-300 mb-8 backdrop-blur-sm">
+                <span class="relative flex h-2 w-2">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                </span>
+                Refonte Digitale 2024
+            </div>
+            
+            <h1 class="text-5xl md:text-7xl font-medium text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-zinc-500 tracking-tight mb-6 text-glow pb-2 leading-[1.1]">
+                Élégance &amp; Performance <br> pour entreprises locales.
+            </h1>
+            
+            <p class="text-lg text-zinc-400 max-w-2xl mx-auto font-light leading-relaxed">
+                Une collection de sites web modernes, optimisés et conçus pour transformer l'image de marque des artisans et commerçants.
+            </p>
+        </section>
+
+        <!-- Projects Grid -->
+        <section id="projects" class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="flex items-center justify-between mb-12 border-b border-white/10 pb-4">
+                <h2 class="text-xl text-zinc-100 font-medium tracking-tight flex items-center gap-2">
+                    <iconify-icon icon="solar:folder-with-files-linear" class="text-zinc-500"></iconify-icon>
+                    Portfolio Sélectionné
+                </h2>
+                <span class="text-xs text-zinc-500 font-mono uppercase tracking-widest">4 Projets Disponibles</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+
+                <!-- Site 1: SPA -->
+                <a href="https://marwan123345678-cyber.github.io/SPA-ET-BIEN-ETREE/" target="_blank" class="group glass-card rounded-2xl p-8 transition-all duration-500 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-rose-500/10 rounded-full blur-3xl -mr-32 -mt-32 transition-opacity opacity-0 group-hover:opacity-100"></div>
+                    
+                    <div class="flex justify-between items-start mb-12 relative z-10">
+                        <div class="w-12 h-12 rounded-xl bg-zinc-900/50 border border-white/10 flex items-center justify-center text-rose-300 group-hover:text-rose-200 transition-colors backdrop-blur-md shadow-lg">
+                            <iconify-icon icon="solar:lotus-linear" width="24" stroke-width="1.5"></iconify-icon>
+                        </div>
+                        <div class="flex items-center gap-1 text-zinc-500 group-hover:text-rose-400 transition-colors text-xs font-medium uppercase tracking-wider bg-black/20 px-2 py-1 rounded-md backdrop-blur-sm">
+                            Visiter
+                            <iconify-icon icon="solar:arrow-right-up-linear" width="16"></iconify-icon>
+                        </div>
+                    </div>
+
+                    <h3 class="text-2xl text-zinc-100 font-medium tracking-tight mb-2 relative z-10">Spa &amp; Bien-Être</h3>
+                    <p class="text-zinc-400 font-light text-sm leading-relaxed mb-6 relative z-10">
+                        Une expérience immersive et relaxante. Design épuré, teintes douces et réservation intuitive pour un centre de détente haut de gamme.
+                    </p>
+
+                    <div class="flex gap-2 relative z-10">
+                        <span class="px-2 py-1 rounded-md bg-white/5 border border-white/5 text-[10px] text-zinc-300">Détente</span>
+                        <span class="px-2 py-1 rounded-md bg-white/5 border border-white/5 text-[10px] text-zinc-300">Soins</span>
+                    </div>
+                </a>
+
+                <!-- Site 2: COIFFURE -->
+                <a href="https://marwan123345678-cyber.github.io/SALON-DE-COIFFURE/" target="_blank" class="group glass-card rounded-2xl p-8 transition-all duration-500 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-amber-500/10 rounded-full blur-3xl -mr-32 -mt-32 transition-opacity opacity-0 group-hover:opacity-100"></div>
+                    
+                    <div class="flex justify-between items-start mb-12 relative z-10">
+                        <div class="w-12 h-12 rounded-xl bg-zinc-900/50 border border-white/10 flex items-center justify-center text-amber-300 group-hover:text-amber-200 transition-colors backdrop-blur-md shadow-lg">
+                            <iconify-icon icon="solar:scissors-square-linear" width="24" stroke-width="1.5"></iconify-icon>
+                        </div>
+                        <div class="flex items-center gap-1 text-zinc-500 group-hover:text-amber-400 transition-colors text-xs font-medium uppercase tracking-wider bg-black/20 px-2 py-1 rounded-md backdrop-blur-sm">
+                            Visiter
+                            <iconify-icon icon="solar:arrow-right-up-linear" width="16"></iconify-icon>
+                        </div>
+                    </div>
+
+                    <h3 class="text-2xl text-zinc-100 font-medium tracking-tight mb-2 relative z-10">L'Art de la Coiffure</h3>
+                    <p class="text-zinc-400 font-light text-sm leading-relaxed mb-6 relative z-10">
+                        Vitrine digitale pour artisans coiffeurs. Mise en avant des coupes, galerie photos dynamique et présentation des stylistes.
+                    </p>
+
+                    <div class="flex gap-2 relative z-10">
+                        <span class="px-2 py-1 rounded-md bg-white/5 border border-white/5 text-[10px] text-zinc-300">Style</span>
+                        <span class="px-2 py-1 rounded-md bg-white/5 border border-white/5 text-[10px] text-zinc-300">Beauté</span>
+                    </div>
+                </a>
+
+                <!-- Site 3: PLOMBERIE -->
+                <a href="https://marwan123345678-cyber.github.io/PLOMBERIEE/" target="_blank" class="group glass-card rounded-2xl p-8 transition-all duration-500 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl -mr-32 -mt-32 transition-opacity opacity-0 group-hover:opacity-100"></div>
+                    
+                    <div class="flex justify-between items-start mb-12 relative z-10">
+                        <div class="w-12 h-12 rounded-xl bg-zinc-900/50 border border-white/10 flex items-center justify-center text-cyan-300 group-hover:text-cyan-200 transition-colors backdrop-blur-md shadow-lg">
+                            <iconify-icon icon="solar:bath-linear" width="24" stroke-width="1.5"></iconify-icon>
+                        </div>
+                        <div class="flex items-center gap-1 text-zinc-500 group-hover:text-cyan-400 transition-colors text-xs font-medium uppercase tracking-wider bg-black/20 px-2 py-1 rounded-md backdrop-blur-sm">
+                            Visiter
+                            <iconify-icon icon="solar:arrow-right-up-linear" width="16"></iconify-icon>
+                        </div>
+                    </div>
+
+                    <h3 class="text-2xl text-zinc-100 font-medium tracking-tight mb-2 relative z-10">Plomberie Express</h3>
+                    <p class="text-zinc-400 font-light text-sm leading-relaxed mb-6 relative z-10">
+                        Solution web pour services d'urgence. Interface claire, contact rapide et mise en confiance du client pour les interventions techniques.
+                    </p>
+
+                    <div class="flex gap-2 relative z-10">
+                        <span class="px-2 py-1 rounded-md bg-white/5 border border-white/5 text-[10px] text-zinc-300">Urgence</span>
+                        <span class="px-2 py-1 rounded-md bg-white/5 border border-white/5 text-[10px] text-zinc-300">Artisanat</span>
+                    </div>
+                </a>
+
+                <!-- Site 4: GARAGE -->
+                <a href="https://marwan123345678-cyber.github.io/GARAGEE/" target="_blank" class="group glass-card rounded-2xl p-8 transition-all duration-500 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-indigo-500/10 rounded-full blur-3xl -mr-32 -mt-32 transition-opacity opacity-0 group-hover:opacity-100"></div>
+                    
+                    <div class="flex justify-between items-start mb-12 relative z-10">
+                        <div class="w-12 h-12 rounded-xl bg-zinc-900/50 border border-white/10 flex items-center justify-center text-indigo-300 group-hover:text-indigo-200 transition-colors backdrop-blur-md shadow-lg">
+                            <iconify-icon icon="solar:wheel-linear" width="24" stroke-width="1.5"></iconify-icon>
+                        </div>
+                        <div class="flex items-center gap-1 text-zinc-500 group-hover:text-indigo-400 transition-colors text-xs font-medium uppercase tracking-wider bg-black/20 px-2 py-1 rounded-md backdrop-blur-sm">
+                            Visiter
+                            <iconify-icon icon="solar:arrow-right-up-linear" width="16"></iconify-icon>
+                        </div>
+                    </div>
+
+                    <h3 class="text-2xl text-zinc-100 font-medium tracking-tight mb-2 relative z-10">Garage Auto Pro</h3>
+                    <p class="text-zinc-400 font-light text-sm leading-relaxed mb-6 relative z-10">
+                        Gestion moderne d'un garage automobile. Présentation des services mécaniques, devis en ligne et identité visuelle robuste.
+                    </p>
+
+                    <div class="flex gap-2 relative z-10">
+                        <span class="px-2 py-1 rounded-md bg-white/5 border border-white/5 text-[10px] text-zinc-300">Mécanique</span>
+                        <span class="px-2 py-1 rounded-md bg-white/5 border border-white/5 text-[10px] text-zinc-300">Auto</span>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- Stats / Features Section -->
+        <section class="max-w-7xl mx-auto px-6 mt-32 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 border-t border-white/10 pt-12 backdrop-blur-sm bg-black/5 rounded-t-3xl px-4">
+                <div class="group hover:bg-white/5 p-4 rounded-xl transition-colors">
+                    <div class="flex items-center gap-2 mb-2 text-zinc-100 font-medium">
+                        <iconify-icon icon="solar:smartphone-linear" class="text-zinc-500 group-hover:text-zinc-200 transition-colors"></iconify-icon>
+                        100% Responsive
+                    </div>
+                    <p class="text-sm text-zinc-500 leading-relaxed group-hover:text-zinc-400 transition-colors">
+                        Adaptation parfaite sur mobile, tablette et ordinateur pour une expérience utilisateur sans friction.
+                    </p>
+                </div>
+                <div class="group hover:bg-white/5 p-4 rounded-xl transition-colors">
+                    <div class="flex items-center gap-2 mb-2 text-zinc-100 font-medium">
+                        <iconify-icon icon="solar:bolt-linear" class="text-zinc-500 group-hover:text-zinc-200 transition-colors"></iconify-icon>
+                        Performance Maximale
+                    </div>
+                    <p class="text-sm text-zinc-500 leading-relaxed group-hover:text-zinc-400 transition-colors">
+                        Optimisation du code pour un chargement instantané et un meilleur référencement naturel.
+                    </p>
+                </div>
+                <div class="group hover:bg-white/5 p-4 rounded-xl transition-colors">
+                    <div class="flex items-center gap-2 mb-2 text-zinc-100 font-medium">
+                        <iconify-icon icon="solar:palette-linear" class="text-zinc-500 group-hover:text-zinc-200 transition-colors"></iconify-icon>
+                        Design Moderne
+                    </div>
+                    <p class="text-sm text-zinc-500 leading-relaxed group-hover:text-zinc-400 transition-colors">
+                        Une esthétique épurée, sombre et élégante qui met en valeur le professionnalisme de chaque métier.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="mt-20 border-t border-white/10 bg-[#050505]/90 backdrop-blur-md relative z-10">
+            <div class="max-w-3xl mx-auto px-6 py-24 text-center">
+                <h2 class="text-3xl font-medium text-zinc-100 tracking-tight mb-4">Prêt à moderniser votre image ?</h2>
+                <p class="text-zinc-400 mb-8 font-light">Transformez votre présence en ligne avec des solutions adaptées à votre activité.</p>
+                
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <button class="w-full sm:w-auto px-6 py-3 bg-white text-black text-sm font-medium rounded-lg hover:bg-zinc-200 transition-colors flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(255,255,255,0.1)]">
+                        Démarrer un projet
+                        <iconify-icon icon="solar:arrow-right-linear"></iconify-icon>
+                    </button>
+                    <button class="w-full sm:w-auto px-6 py-3 bg-white/5 border border-white/10 text-zinc-300 text-sm font-medium rounded-lg hover:bg-white/10 transition-colors">
+                        Me contacter
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="border-t border-white/10 bg-black relative z-10">
+        <div class="max-w-7xl mx-auto px-6 py-12 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="text-sm text-zinc-600 font-light">
+                © 2024 Marwan Digital. Tous droits réservés.
+            </div>
+            <div class="flex gap-6">
+                <a href="#" class="text-zinc-600 hover:text-white transition-colors">
+                    <iconify-icon icon="brandico:github" width="20"></iconify-icon>
+                </a>
+                <a href="#" class="text-zinc-600 hover:text-white transition-colors">
+                    <iconify-icon icon="brandico:linkedin" width="20"></iconify-icon>
+                </a>
+                <a href="#" class="text-zinc-600 hover:text-white transition-colors">
+                    <iconify-icon icon="solar:letter-linear" width="20"></iconify-icon>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+</body></html>
