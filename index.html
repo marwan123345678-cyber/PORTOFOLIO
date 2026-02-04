@@ -1,235 +1,231 @@
-<html lang="fr" class="scroll-smooth"><head>
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marwan Digital Portfolio</title>
+    <title>Marwan Digital Portfolio | L'Excellence Digitale</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Inter', sans-serif;
             background-color: #030303;
+            /* Image incarnant la richesse, le pouvoir et l'architecture innovante */
             background-image: 
-                linear-gradient(to bottom, rgba(3, 3, 3, 0.85) 0%, rgba(3, 3, 3, 0.95) 100%),
-                url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=2070');
+                linear-gradient(to bottom, rgba(3, 3, 3, 0.75) 0%, rgba(3, 3, 3, 0.95) 100%),
+                url('https://images.unsplash.com/photo-1514924013411-cbf25faa35bb?q=80&w=2000&auto=format&fit=crop');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
             background-repeat: no-repeat;
         }
+
+        /* Effet de balayage lumineux "Shine" Premium */
+        .premium-shine {
+            background: linear-gradient(90deg, #ffffff 0%, #ffffff 30%, #555555 50%, #ffffff 70%, #ffffff 100%);
+            background-size: 200% auto;
+            color: #fff;
+            background-clip: text;
+            text-fill-color: transparent;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shine 4s linear infinite;
+        }
+
+        @keyframes shine {
+            to { background-position: 200% center; }
+        }
+
         .glass-card {
-            background: rgba(20, 20, 20, 0.4);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
+            background: rgba(15, 15, 15, 0.5);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
             border: 1px solid rgba(255, 255, 255, 0.08);
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
         }
+
         .glass-card:hover {
-            background: rgba(30, 30, 30, 0.6);
-            border-color: rgba(255, 255, 255, 0.15);
-            transform: translateY(-4px);
+            background: rgba(30, 30, 30, 0.65);
+            border-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-10px) scale(1.01);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
         }
+
         .text-glow {
-            text-shadow: 0 0 40px rgba(255,255,255,0.15);
+            text-shadow: 0 0 40px rgba(255,255,255,0.25);
         }
+
         ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: #0a0a0a; }
-        ::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
-        ::-webkit-scrollbar-thumb:hover { background: #444; }
+        ::-webkit-scrollbar-thumb { background: #444; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #666; }
     </style>
 </head>
 <body class="text-zinc-400 antialiased selection:bg-white/20 selection:text-white min-h-screen flex flex-col">
 
-    <!-- Navigation -->
-    <nav class="fixed top-0 w-full z-50 border-b border-white/5 bg-[#030303]/70 backdrop-blur-xl">
-        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-            <a href="#" class="text-zinc-100 font-medium tracking-tighter text-lg flex items-center gap-2">
-                <div class="w-6 h-6 bg-gradient-to-tr from-zinc-200 to-zinc-500 rounded-full flex items-center justify-center shadow-[0_0_15px_rgba(255,255,255,0.3)]">
-                    <div class="w-2 h-2 bg-[#030303] rounded-full"></div>
+    <nav class="fixed top-0 w-full z-50 border-b border-white/5 bg-[#030303]/80 backdrop-blur-2xl">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="text-zinc-100 font-medium tracking-tighter text-xl flex items-center gap-3">
+                <div class="w-8 h-8 bg-gradient-to-tr from-zinc-100 via-zinc-400 to-zinc-700 rounded-full flex items-center justify-center shadow-[0_0_20px_rgba(255,255,255,0.4)]">
+                    <div class="w-2.5 h-2.5 bg-[#030303] rounded-full"></div>
                 </div>
                 MARWAN
             </a>
-            <div class="hidden md:flex items-center gap-8 text-sm font-medium">
-                <a href="#about" class="text-zinc-400 hover:text-zinc-100 transition-colors">Qui sommes-nous</a>
-                <a href="#projects" class="text-zinc-400 hover:text-zinc-100 transition-colors">Projets</a>
-                <a href="tel:0610396936" class="px-4 py-2 bg-white text-black rounded-full hover:bg-zinc-200 transition-colors font-medium text-xs tracking-wide flex items-center gap-2">
-                    <iconify-icon icon="solar:phone-calling-linear"></iconify-icon>
+            <div class="hidden md:flex items-center gap-10 text-sm font-medium">
+                <a href="#about" class="text-zinc-400 hover:text-zinc-100 transition-all">Qui sommes-nous</a>
+                <a href="#projects" class="text-zinc-400 hover:text-zinc-100 transition-all">Projets</a>
+                <a href="tel:0610396936" class="px-6 py-2.5 bg-white text-black rounded-full hover:bg-zinc-200 transition-transform active:scale-95 font-semibold text-xs tracking-widest flex items-center gap-2 shadow-xl">
+                    <iconify-icon icon="solar:phone-calling-bold"></iconify-icon>
                     06 10 39 69 36
                 </a>
             </div>
         </div>
     </nav>
 
-    <main class="relative pt-36 pb-20 flex-grow">
+    <main class="relative pt-44 pb-20 flex-grow">
         
-        <!-- Hero Section -->
-        <section class="max-w-5xl mx-auto px-6 mb-32 text-center relative z-10">
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/10 bg-white/5 text-xs font-medium text-zinc-300 mb-8 backdrop-blur-sm">
+        <section class="max-w-5xl mx-auto px-6 mb-40 text-center relative z-10">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/10 bg-white/5 text-[10px] uppercase tracking-[0.2em] font-bold text-zinc-300 mb-10 backdrop-blur-md">
                 <span class="relative flex h-2 w-2">
                   <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                   <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
                 </span>
-                Refonte Digitale 2024
+                Standard d'Exception 2024
             </div>
             
-            <h1 class="text-5xl md:text-7xl font-medium text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-zinc-500 tracking-tight mb-6 text-glow pb-2 leading-[1.1]">
-                Élégance &amp; Performance <br> pour ceux qui veulent s'élever.
+            <h1 class="text-6xl md:text-8xl font-medium tracking-tighter mb-8 text-glow leading-[0.95] premium-shine">
+                Élégance & Performance <br> pour l'élite digitale.
             </h1>
             
-            <p class="text-lg text-zinc-400 max-w-2xl mx-auto font-light leading-relaxed">
-                Une collection de sites web modernes, optimisés et conçus pour transformer l'image de marque des artisans et commerçants.
+            <p class="text-xl text-zinc-400 max-w-2xl mx-auto font-light leading-relaxed">
+                Plus qu'un site internet, une déclaration de puissance. <br>
+                Conçu pour ceux qui refusent d'être des "plots".
             </p>
         </section>
 
-        <!-- QUI SOMMES NOUS Section -->
-        <section id="about" class="max-w-4xl mx-auto px-6 mb-32 relative z-10">
-            <div class="glass-card rounded-2xl p-8 md:p-12 border-l-4 border-l-white/20">
-                <div class="flex items-center gap-3 mb-8">
-                    <div class="p-2 bg-white/5 rounded-lg text-zinc-100">
-                        <iconify-icon icon="solar:user-id-linear" width="24"></iconify-icon>
+        <section id="about" class="max-w-4xl mx-auto px-6 mb-40 relative z-10">
+            <div class="glass-card rounded-3xl p-10 md:p-16 border-l-8 border-l-white/10">
+                <div class="flex items-center gap-4 mb-10">
+                    <div class="p-3 bg-white/10 rounded-xl text-white shadow-inner">
+                        <iconify-icon icon="solar:shield-user-bold" width="28"></iconify-icon>
                     </div>
-                    <h2 class="text-2xl text-zinc-100 font-medium tracking-tight">QUI SOMMES-NOUS ?</h2>
+                    <h2 class="text-3xl text-zinc-100 font-medium tracking-tight">MANIFESTE</h2>
                 </div>
 
-                <div class="space-y-6 text-zinc-400 leading-relaxed font-light text-base md:text-lg">
+                <div class="space-y-8 text-zinc-300 leading-relaxed font-light text-lg md:text-xl">
                     <p>
-                        Je m'appelle <span class="text-zinc-100 font-normal">Marwan</span>, j'ai 26 ans et je suis originaire de <span class="text-zinc-100 font-normal">Montpellier</span>.
+                        Je m'appelle <span class="text-white font-semibold">Marwan</span>, 26 ans, de <span class="text-white font-semibold">Montpellier</span>.
                     </p>
                     <p>
-                        À la base, je suis restaurateur. J'ai connu les horaires infernaux, la fatigue et cette impression de tourner en rond. Un jour, j'ai pris une décision radicale : <span class="text-zinc-100 font-normal">ne plus être l'esclave de mon propre commerce</span>. Mon objectif ultime est clair : atteindre la <span class="text-white font-medium border-b border-white/20">liberté géographique</span> et devenir un véritable nomade digital.
+                        Ancien restaurateur, j'ai brisé les chaînes de l'esclavage moderne. Mon ambition ? La <span class="text-white font-bold border-b-2 border-white/30">liberté totale</span>.
                     </p>
                     
-                    <div class="my-8 pl-6 border-l-2 border-red-500/50 italic text-zinc-300">
-                        "La France va très mal. 90% des gens sont des 'plots', et j'en faisais partie. Je fais mon maximum tous les jours pour quitter cette secte de plots."
+                    <div class="my-10 pl-8 border-l-2 border-white/20 italic text-zinc-200 bg-white/5 py-6 pr-4 rounded-r-xl">
+                        "90% des gens sont des 'plots'. Je dédie chaque jour à m'éloigner de cette masse pour bâtir un empire digital sur-mesure."
                     </div>
 
                     <p>
-                        Je ne crée pas juste des sites web. Je construis des outils pour ceux qui, comme moi, veulent sortir du lot, optimiser leur business et reprendre le contrôle de leur temps et de leur argent.
+                        Chaque ligne de code que je tape est une arme pour votre business. Je ne crée pas des sites, je bâtis votre autorité.
                     </p>
                 </div>
             </div>
         </section>
 
-        <!-- Projects Grid -->
         <section id="projects" class="max-w-7xl mx-auto px-6 relative z-10">
-            <div class="flex items-center justify-between mb-12 border-b border-white/10 pb-4">
-                <h2 class="text-xl text-zinc-100 font-medium tracking-tight flex items-center gap-2">
-                    <iconify-icon icon="solar:folder-with-files-linear" class="text-zinc-500"></iconify-icon>
-                    Portfolio Sélectionné
+            <div class="flex items-center justify-between mb-16 border-b border-white/5 pb-6">
+                <h2 class="text-2xl text-zinc-100 font-medium tracking-tight flex items-center gap-3">
+                    <iconify-icon icon="solar:crown-minimalistic-bold" class="text-zinc-500"></iconify-icon>
+                    Réalisations de Prestige
                 </h2>
-                <span class="text-xs text-zinc-500 font-mono uppercase tracking-widest">4 Projets Disponibles</span>
+                <span class="text-[10px] text-zinc-500 font-mono uppercase tracking-[0.3em]">Exclusivité & Qualité</span>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-
-                <!-- Site 1 -->
-                <a href="https://marwan123345678-cyber.github.io/SPA-ET-BIEN-ETREE/" target="_blank" class="group glass-card rounded-2xl p-8 transition-all duration-500 relative overflow-hidden">
-                    <div class="absolute top-0 right-0 w-64 h-64 bg-rose-500/10 rounded-full blur-3xl -mr-32 -mt-32 transition-opacity opacity-0 group-hover:opacity-100"></div>
-                    <div class="flex justify-between items-start mb-12 relative z-10">
-                        <div class="w-12 h-12 rounded-xl bg-zinc-900/50 border border-white/10 flex items-center justify-center text-rose-300 group-hover:text-rose-200 transition-colors backdrop-blur-md shadow-lg">
-                            <iconify-icon icon="solar:lotus-linear" width="24" stroke-width="1.5"></iconify-icon>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <a href="https://marwan123345678-cyber.github.io/SPA-ET-BIEN-ETREE/" target="_blank" class="group glass-card rounded-3xl p-10 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-80 h-80 bg-white/5 rounded-full blur-3xl -mr-40 -mt-40 group-hover:bg-white/10 transition-colors"></div>
+                    <div class="flex justify-between items-start mb-16 relative z-10">
+                        <div class="w-14 h-14 rounded-2xl bg-zinc-900 border border-white/10 flex items-center justify-center text-white group-hover:scale-110 transition-transform">
+                            <iconify-icon icon="solar:lotus-bold" width="28"></iconify-icon>
                         </div>
-                        <div class="flex items-center gap-1 text-zinc-500 group-hover:text-rose-400 transition-colors text-xs font-medium uppercase tracking-wider bg-black/20 px-2 py-1 rounded-md backdrop-blur-sm">
-                            Visiter <iconify-icon icon="solar:arrow-right-up-linear" width="16"></iconify-icon>
-                        </div>
+                        <div class="text-[10px] font-bold uppercase tracking-widest text-zinc-500 group-hover:text-white transition-colors">Explorer</div>
                     </div>
-                    <h3 class="text-2xl text-zinc-100 font-medium tracking-tight mb-2 relative z-10">Spa &amp; Bien-Être</h3>
-                    <p class="text-zinc-400 font-light text-sm leading-relaxed mb-6 relative z-10">Expérience immersive et relaxante pour centre haut de gamme.</p>
+                    <h3 class="text-3xl text-zinc-100 font-medium mb-3">Spa & Bien-Être</h3>
+                    <p class="text-zinc-500 group-hover:text-zinc-300 transition-colors">Luxe sensoriel et sérénité digitale.</p>
                 </a>
 
-                <!-- Site 2 -->
-                <a href="https://marwan123345678-cyber.github.io/SALON-DE-COIFFURE/" target="_blank" class="group glass-card rounded-2xl p-8 transition-all duration-500 relative overflow-hidden">
-                    <div class="absolute top-0 right-0 w-64 h-64 bg-amber-500/10 rounded-full blur-3xl -mr-32 -mt-32 transition-opacity opacity-0 group-hover:opacity-100"></div>
-                    <div class="flex justify-between items-start mb-12 relative z-10">
-                        <div class="w-12 h-12 rounded-xl bg-zinc-900/50 border border-white/10 flex items-center justify-center text-amber-300 group-hover:text-amber-200 transition-colors backdrop-blur-md shadow-lg">
-                            <iconify-icon icon="solar:scissors-square-linear" width="24" stroke-width="1.5"></iconify-icon>
+                <a href="https://marwan123345678-cyber.github.io/SALON-DE-COIFFURE/" target="_blank" class="group glass-card rounded-3xl p-10 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-80 h-80 bg-white/5 rounded-full blur-3xl -mr-40 -mt-40 group-hover:bg-white/10 transition-colors"></div>
+                    <div class="flex justify-between items-start mb-16 relative z-10">
+                        <div class="w-14 h-14 rounded-2xl bg-zinc-900 border border-white/10 flex items-center justify-center text-white group-hover:scale-110 transition-transform">
+                            <iconify-icon icon="solar:scissors-bold" width="28"></iconify-icon>
                         </div>
-                        <div class="flex items-center gap-1 text-zinc-500 group-hover:text-amber-400 transition-colors text-xs font-medium uppercase tracking-wider bg-black/20 px-2 py-1 rounded-md backdrop-blur-sm">
-                            Visiter <iconify-icon icon="solar:arrow-right-up-linear" width="16"></iconify-icon>
-                        </div>
+                        <div class="text-[10px] font-bold uppercase tracking-widest text-zinc-500 group-hover:text-white transition-colors">Explorer</div>
                     </div>
-                    <h3 class="text-2xl text-zinc-100 font-medium tracking-tight mb-2 relative z-10">L'Art de la Coiffure</h3>
-                    <p class="text-zinc-400 font-light text-sm leading-relaxed mb-6 relative z-10">Vitrine digitale premium pour artisans coiffeurs.</p>
+                    <h3 class="text-3xl text-zinc-100 font-medium mb-3">L'Art de la Coiffure</h3>
+                    <p class="text-zinc-500 group-hover:text-zinc-300 transition-colors">L'excellence du style, immortalisée.</p>
                 </a>
 
-                <!-- Site 3 -->
-                <a href="https://marwan123345678-cyber.github.io/PLOMBERIEE/" target="_blank" class="group glass-card rounded-2xl p-8 transition-all duration-500 relative overflow-hidden">
-                    <div class="absolute top-0 right-0 w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl -mr-32 -mt-32 transition-opacity opacity-0 group-hover:opacity-100"></div>
-                    <div class="flex justify-between items-start mb-12 relative z-10">
-                        <div class="w-12 h-12 rounded-xl bg-zinc-900/50 border border-white/10 flex items-center justify-center text-cyan-300 group-hover:text-cyan-200 transition-colors backdrop-blur-md shadow-lg">
-                            <iconify-icon icon="solar:bath-linear" width="24" stroke-width="1.5"></iconify-icon>
+                <a href="https://marwan123345678-cyber.github.io/PLOMBERIEE/" target="_blank" class="group glass-card rounded-3xl p-10 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-80 h-80 bg-white/5 rounded-full blur-3xl -mr-40 -mt-40 group-hover:bg-white/10 transition-colors"></div>
+                    <div class="flex justify-between items-start mb-16 relative z-10">
+                        <div class="w-14 h-14 rounded-2xl bg-zinc-900 border border-white/10 flex items-center justify-center text-white group-hover:scale-110 transition-transform">
+                            <iconify-icon icon="solar:settings-bold" width="28"></iconify-icon>
                         </div>
-                        <div class="flex items-center gap-1 text-zinc-500 group-hover:text-cyan-400 transition-colors text-xs font-medium uppercase tracking-wider bg-black/20 px-2 py-1 rounded-md backdrop-blur-sm">
-                            Visiter <iconify-icon icon="solar:arrow-right-up-linear" width="16"></iconify-icon>
-                        </div>
+                        <div class="text-[10px] font-bold uppercase tracking-widest text-zinc-500 group-hover:text-white transition-colors">Explorer</div>
                     </div>
-                    <h3 class="text-2xl text-zinc-100 font-medium tracking-tight mb-2 relative z-10">Plomberie Express</h3>
-                    <p class="text-zinc-400 font-light text-sm leading-relaxed mb-6 relative z-10">Solution web d'urgence pour artisans techniques.</p>
+                    <h3 class="text-3xl text-zinc-100 font-medium mb-3">Plomberie Express</h3>
+                    <p class="text-zinc-500 group-hover:text-zinc-300 transition-colors">Efficacité radicale, design robuste.</p>
                 </a>
 
-                <!-- Site 4 -->
-                <a href="https://marwan123345678-cyber.github.io/GARAGEE/" target="_blank" class="group glass-card rounded-2xl p-8 transition-all duration-500 relative overflow-hidden">
-                    <div class="absolute top-0 right-0 w-64 h-64 bg-indigo-500/10 rounded-full blur-3xl -mr-32 -mt-32 transition-opacity opacity-0 group-hover:opacity-100"></div>
-                    <div class="flex justify-between items-start mb-12 relative z-10">
-                        <div class="w-12 h-12 rounded-xl bg-zinc-900/50 border border-white/10 flex items-center justify-center text-indigo-300 group-hover:text-indigo-200 transition-colors backdrop-blur-md shadow-lg">
-                            <iconify-icon icon="solar:wheel-linear" width="24" stroke-width="1.5"></iconify-icon>
+                <a href="https://marwan123345678-cyber.github.io/GARAGEE/" target="_blank" class="group glass-card rounded-3xl p-10 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-80 h-80 bg-white/5 rounded-full blur-3xl -mr-40 -mt-40 group-hover:bg-white/10 transition-colors"></div>
+                    <div class="flex justify-between items-start mb-16 relative z-10">
+                        <div class="w-14 h-14 rounded-2xl bg-zinc-900 border border-white/10 flex items-center justify-center text-white group-hover:scale-110 transition-transform">
+                            <iconify-icon icon="solar:transmission-bold" width="28"></iconify-icon>
                         </div>
-                        <div class="flex items-center gap-1 text-zinc-500 group-hover:text-indigo-400 transition-colors text-xs font-medium uppercase tracking-wider bg-black/20 px-2 py-1 rounded-md backdrop-blur-sm">
-                            Visiter <iconify-icon icon="solar:arrow-right-up-linear" width="16"></iconify-icon>
-                        </div>
+                        <div class="text-[10px] font-bold uppercase tracking-widest text-zinc-500 group-hover:text-white transition-colors">Explorer</div>
                     </div>
-                    <h3 class="text-2xl text-zinc-100 font-medium tracking-tight mb-2 relative z-10">Garage Auto Pro</h3>
-                    <p class="text-zinc-400 font-light text-sm leading-relaxed mb-6 relative z-10">Gestion moderne et identité robuste pour garage automobile.</p>
+                    <h3 class="text-3xl text-zinc-100 font-medium mb-3">Garage Auto Pro</h3>
+                    <p class="text-zinc-500 group-hover:text-zinc-300 transition-colors">La puissance mécanique sous contrôle digital.</p>
                 </a>
-
             </div>
         </section>
 
-        <!-- Call to Action / Contact -->
-        <section class="mt-20 border-t border-white/10 bg-[#050505]/90 backdrop-blur-md relative z-10">
-            <div class="max-w-3xl mx-auto px-6 py-24 text-center">
-                <h2 class="text-3xl font-medium text-zinc-100 tracking-tight mb-4">Prêt à quitter la masse ?</h2>
-                <p class="text-zinc-400 mb-8 font-light">Transformez votre présence en ligne dès maintenant.</p>
-                
-                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                    <a href="tel:0610396936" class="w-full sm:w-auto px-6 py-3 bg-white text-black text-sm font-medium rounded-lg hover:bg-zinc-200 transition-colors flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(255,255,255,0.1)]">
-                        <iconify-icon icon="solar:phone-calling-bold"></iconify-icon>
-                        06 10 39 69 36
-                    </a>
-                </div>
+        <section class="mt-40 relative z-10 px-6">
+            <div class="max-w-4xl mx-auto glass-card rounded-[3rem] py-20 text-center border border-white/10">
+                <h2 class="text-4xl md:text-5xl font-medium text-white mb-6">Prêt à dominer votre marché ?</h2>
+                <p class="text-zinc-400 mb-12 text-lg">Ne soyez plus un spectateur. Prenez le contrôle.</p>
+                <a href="tel:0610396936" class="inline-flex items-center gap-4 px-10 py-5 bg-white text-black font-bold rounded-2xl hover:scale-105 transition-transform shadow-[0_20px_40px_rgba(255,255,255,0.1)]">
+                    <iconify-icon icon="solar:phone-bold" width="24"></iconify-icon>
+                    Lancer mon projet : 06 10 39 69 36
+                </a>
             </div>
         </section>
 
     </main>
 
-    <footer class="border-t border-white/10 bg-black relative z-10 pb-8">
-        <div class="max-w-7xl mx-auto px-6 py-12 flex flex-col md:flex-row items-center justify-between gap-6">
-            <div class="text-sm text-zinc-600 font-light">
-                © 2024 Marwan Digital.
+    <footer class="bg-black py-20 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div>
+                <div class="text-white font-bold tracking-widest mb-6">MARWAN DIGITAL</div>
+                <p class="text-xs text-zinc-600 font-mono leading-relaxed max-w-sm">
+                    Édition de prestige. Montpellier, France. <br>
+                    Propulsé par une ambition sans limites.
+                </p>
             </div>
-            <div class="flex gap-6">
-                <a href="#" class="text-zinc-600 hover:text-white transition-colors">
-                    <iconify-icon icon="brandico:linkedin" width="20"></iconify-icon>
-                </a>
-                <a href="#" class="text-zinc-600 hover:text-white transition-colors">
-                    <iconify-icon icon="solar:letter-linear" width="20"></iconify-icon>
-                </a>
-            </div>
-        </div>
-
-        <!-- Mentions Légales -->
-        <div class="max-w-7xl mx-auto px-6 pt-4 border-t border-white/5">
-            <h4 class="text-xs font-medium text-zinc-500 uppercase tracking-widest mb-4">Mentions Légales</h4>
-            <div class="text-[10px] text-zinc-700 space-y-2 leading-relaxed font-mono">
-                <p>Éditeur du site : Marwan Digital. Siège social : Montpellier, France.</p>
-                <p>Hébergeur : GitHub Pages. Contact : 06 10 39 69 36.</p>
-                <p>Propriété intellectuelle : L'ensemble de ce site relève de la législation française et internationale sur le droit d'auteur et la propriété intellectuelle. Tous les droits de reproduction sont réservés.</p>
-                <p>Données personnelles : Aucune donnée personnelle n'est collectée à votre insu.</p>
+            <div class="flex flex-col items-end gap-4">
+                <div class="text-[10px] text-zinc-700 uppercase tracking-widest">© 2024 Tous droits réservés</div>
+                <div class="flex gap-4">
+                    <iconify-icon icon="solar:globus-linear" class="text-zinc-800" width="24"></iconify-icon>
+                    <iconify-icon icon="solar:medal-star-bold" class="text-zinc-800" width="24"></iconify-icon>
+                </div>
             </div>
         </div>
     </footer>
 
-
-</body></html>
+</body>
+</html>
